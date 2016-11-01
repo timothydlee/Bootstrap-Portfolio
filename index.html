@@ -1,91 +1,308 @@
 <!DOCTYPE html>
-<html>
-	
-	<head>
-		
-		<title>Bootstrap Practice</title>
+<html lang="en">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+<head>
 
-	</head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<body>
-		
-		<div class="container">
+    <title>Portfolio</title>
 
-			<header class="row">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-				<div class="col-md-12">
-					
-					<nav class="navbar navbar-default navbar-fixed-top">
-					  
-					  <div id="navbar-content" class="container">
-					    <h4>Tim Lee</h4>
-					    
-					    <ul>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-					  </div>
 
-					</nav>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-				</div>
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
 
-			</header> <!-- end row 1 navbar-->
 
-			<section class="about-me-content" class="row"> <!-- start row 2 content-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-				<div class="col-md-9">
-					<h1>About Me</h1>
-				
-					<hr>
+</head>
 
-					<img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg" alt="puppy">
-					<p>
-						I'm a big sports fan. I went to the University of Michigan, and being from North East Ohio, I'm a huge fan of the Cavs, Indians and sadly (read: very sadly) the Browns. I can't complain though, since three out of my four teams are having great years. 
-					</p>
+<body id="page-top">
 
-					<p>
-						Let's find out what happens when people stop being polite and people start getting real.
-					</p>
-				</div>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Tim Lee</a>
+            </div>
 
-				<div class="col-md-3">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-					<div class="panel panel-default">
+    <header>
+        <div class="header-content" id="about">
+            <div class="header-content-inner">
+                <div class="row">
+                    <h1 id="homeHeading">About Me</h1>
+                    <a href="#about"></a> <img id="auth-image" src="img/portfolio/profilepicture.jpg" alt="Profile Picture">
+                    <hr>
+                    <p class="text-muted">I'm a big sports fan. I graduated from the University of Michigan so naturally I'm a fan of the football team. Being from North East Ohio, I'm a also a huge fan of the Cavaliers, Indians and sadly (very sadly) the Browns. I can't complain though, this, since three out of my four teams had or are having great years. I may or may not have cried when the Cavs won the NBA Championship.</p>
+                    <p class="text-muted"> Let's find out what happens when people stop being polite and people start getting real.</p>
+                    <a href="#portfolio" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                </div>
 
-					  	<div class="panel-heading">
-					  		Panel 
-					  	</div>
+                <div class="row" id="spacer">
+                    <div class="col-lg-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> <!--END OF ABOUT ME SECTION--> 
+    
+    <!--START OF PORTFOLIO SECTION-->
 
-						<div class="panel-body" class="row">
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-heading">Portfolio</h1>
+                </div>
+            </div>
+        </div>
+        <section class="no-padding">
+            <div class="container-fluid">
+                <div class="row no-gutter popup-gallery">
+                    <div class="col-lg-4 col-sm-6"> <!--Hangman Game-->
+                        <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Game
+                                    </div>
+                                    <div class="project-name">
+                                        Hangman Game
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!--END Hangman Game-->
+                    <div class="col-lg-4 col-sm-6"> <!--RPG Game-->
+                        <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Game
+                                    </div>
+                                    <div class="project-name">
+                                        Role Playing Game
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!--END RPG Game-->
+                    <div class="col-lg-4 col-sm-6"> <!--Trivia Game-->
+                        <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Game
+                                    </div>
+                                    <div class="project-name">
+                                        Trivia
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!--END Trivia Game-->
+                    <div class="col-lg-4 col-sm-6"> <!--Rutgers Info Widget-->
+                        <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Widget
+                                    </div>
+                                    <div class="project-name">
+                                        Rutgers Info Widget
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!--END Rutgers Info Widget-->
+                    <div class="col-lg-4 col-sm-6"> <!--RPS Game-->
+                        <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Game
+                                    </div>
+                                    <div class="project-name">
+                                        Rock Paper Scissors
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!--END RPS Game-->
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Design
+                                    </div>
+                                    <div class="project-name">
+                                        Coming Soon
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6"> <!--Placeholder-->
+                        <a href="img/portfolio/fullsize/7.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/7.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Design
+                                    </div>
+                                    <div class="project-name">
+                                        Coming Soon
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- End Placeholder -->
+                    <div class="col-lg-4 col-sm-6"> <!--Placeholder-->
+                        <a href="img/portfolio/fullsize/8.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/8.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Coming Soon
+                                    </div>
+                                    <div class="project-name">
+                                        Coming Soon
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- End Placeholder -->
+                    <div class="col-lg-4 col-sm-6"> <!--Placeholder-->
+                        <a href="img/portfolio/fullsize/9.jpg" class="portfolio-box">
+                            <img src="img/portfolio/thumbnails/9.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Coming Soon
+                                    </div>
+                                    <div class="project-name">
+                                        Coming Soon
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div> <!-- End Placeholder -->                                        
+                </div>
+            </div> <!-- END CONTAINER FLUID DIV -->
+        </section> <!--END NO PADDING SECTION -->
+    </section> <!--END PORTFOLIO SECTION-->
 
-							<div class="col-md-4">
-							    <a href="https://github.com/timothydlee" target="_blank"><img src=assets/images/Github.png alt="github image"></a>
-							</div>
 
-							<div class="col-md-4">
-								<a href="https://www.linkedin.com/in/timothy-lee-84370328" target="_blank"><img src=assets/images/LinkedIn.png alt="linkedin icon"></a>
-							</div>
-							
-							<div class="col-md-4">
-								<a href="http://stackoverflow.com/users/6933728/tim-lee" target="_blank"><img src=assets/images/StackOverflow.png alt="stackflow icon">
-								</a>
-							</div>
-						</div>
+    <!-- START CONTACT ME SECTION -->
+    <section class="bg-dark" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next project? That's great! Give me a call, send me an email or drop me a message below, and I will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>330.219.4348</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:timothy.d.lee@live.com">
+                    timothy.d.lee@live.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section> <!--END CONTACT ME SECTION -->
 
-					</div>
+    <!-- START OF FOOTER SECTION -->
+    <footer class="bg-dark" id="footer">
+        <div class="container">
+            <div class="row" id="contact-icons">
+                <div class="col-lg-4 text-center">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="https://github.com/timothydlee" target="_blank"></a><img src="img/portfolio/github.png" class="social" alt="Github">
+                    <a href="https://www.linkedin.com/in/timothy-lee-84370328" target="_blank"></a><img src="img/portfolio/linkedin.png" class="social" alt="LinkedIn">
+                    <a href="http://stackoverflow.com/users/6933728/tim-lee" target="_blank"></a><img src="img/portfolio/stackoverflow.png" class="social" alt="Stack Overflow">
+                </div>
+                <div class="col-lg-4 text-center">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h6>&copy; Copyright 2016 Timothy Lee</h6>
+                </div>
+                <div class="col-lg-4">
+                </div>
+            </div>
+        </div>
+    </footer> <!-- END OF FOOTER SECTION -->
 
-				</div> <!-- ends row 2 -->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-			</section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-		</div> <!-- ends container -->
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-	</body>
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
 
 </html>
