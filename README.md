@@ -25,3 +25,7 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.
+
+Tim's Notes
+
+This is my portfolio page using the Bootstrap theme Creative. I removed multiple, non-relevant sections (at least at this point). For instance, the services section of the page. I have added my own profile information, a profile picture, added links to my Github, LinkedIn, and StackOverflow, created additional portfolio placeholder pages.
