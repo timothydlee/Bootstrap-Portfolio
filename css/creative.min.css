@@ -221,6 +221,10 @@ header .header-content .header-content-inner p {
 	width: auto;
 }
 
+#contact{
+    height: 30%;
+}
+
 /*=================================
             Footer Style
 ===================================*/
